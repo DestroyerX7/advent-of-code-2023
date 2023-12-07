@@ -1,0 +1,14 @@
+D:\VS Code Projects\Advent of Code 2023\Day 2\bin\Debug\net7.0\Day 2.exe
+D:\VS Code Projects\Advent of Code 2023\Day 2\bin\Debug\net7.0\Day 2.deps.json
+D:\VS Code Projects\Advent of Code 2023\Day 2\bin\Debug\net7.0\Day 2.runtimeconfig.json
+D:\VS Code Projects\Advent of Code 2023\Day 2\bin\Debug\net7.0\Day 2.dll
+D:\VS Code Projects\Advent of Code 2023\Day 2\bin\Debug\net7.0\Day 2.pdb
+D:\VS Code Projects\Advent of Code 2023\Day 2\obj\Debug\net7.0\Day 2.GeneratedMSBuildEditorConfig.editorconfig
+D:\VS Code Projects\Advent of Code 2023\Day 2\obj\Debug\net7.0\Day 2.AssemblyInfoInputs.cache
+D:\VS Code Projects\Advent of Code 2023\Day 2\obj\Debug\net7.0\Day 2.AssemblyInfo.cs
+D:\VS Code Projects\Advent of Code 2023\Day 2\obj\Debug\net7.0\Day 2.csproj.CoreCompileInputs.cache
+D:\VS Code Projects\Advent of Code 2023\Day 2\obj\Debug\net7.0\Day 2.dll
+D:\VS Code Projects\Advent of Code 2023\Day 2\obj\Debug\net7.0\refint\Day 2.dll
+D:\VS Code Projects\Advent of Code 2023\Day 2\obj\Debug\net7.0\Day 2.pdb
+D:\VS Code Projects\Advent of Code 2023\Day 2\obj\Debug\net7.0\Day 2.genruntimeconfig.cache
+D:\VS Code Projects\Advent of Code 2023\Day 2\obj\Debug\net7.0\ref\Day 2.dll
