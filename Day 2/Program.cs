@@ -4,7 +4,7 @@ public class Program
 {
     private static void Main(string[] args)
     {
-        string[] lines = File.ReadAllLines("D:/VS Code Projects/Advent of Code 2023/Day 2/input.txt");
+        string[] lines = File.ReadAllLines("D:/VS Code Projects/advent-of-code-2023/Day 2/input.txt");
         PartOne(lines);
         PartTwo(lines);
     }
@@ -24,7 +24,7 @@ public class Program
 
         foreach (string line in lines)
         {
-            string formatted = line.Substring(line.IndexOf(':') + 1);
+            string formatted = line[(line.IndexOf(':') + 1)..];
             string[] sets = formatted.Split(new char[] { ';', ',' });
             bool possibleGame = true;
 
@@ -32,7 +32,7 @@ public class Program
             {
                 string formattedNumColor = set.Trim();
                 string numString = formattedNumColor.Substring(0, formattedNumColor.IndexOf(' '));
-                string color = formattedNumColor.Substring(formattedNumColor.IndexOf(' ') + 1);
+                string color = formattedNumColor[(formattedNumColor.IndexOf(' ') + 1)..];
 
                 int num = int.Parse(numString);
 
@@ -73,8 +73,8 @@ public class Program
             foreach (string set in sets)
             {
                 string formattedNumColor = set.Trim();
-                string numString = formattedNumColor.Substring(0, formattedNumColor.IndexOf(' '));
-                string color = formattedNumColor.Substring(formattedNumColor.IndexOf(' ') + 1);
+                string numString = formattedNumColor[..formattedNumColor.IndexOf(' ')];
+                string color = formattedNumColor[(formattedNumColor.IndexOf(' ') + 1)..];
 
                 int num = int.Parse(numString);
 

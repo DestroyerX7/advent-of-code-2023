@@ -4,7 +4,7 @@ public class Program
 {
     private static void Main(string[] args)
     {
-        string[] lines = File.ReadAllLines("D:/VS Code Projects/Advent of Code 2023/Day 7/input.txt");
+        string[] lines = File.ReadAllLines("D:/VS Code Projects/advent-of-code-2023/Day 7/input.txt");
         PartOne(lines);
         PartTwo(lines);
     }

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\VS Code Projects\\Advent of Code 2023\\Day 3\\Day 3.csproj",
+      "projectUniqueName": "D:\\VS Code Projects\\advent-of-code-2023\\Day 3\\Day 3.csproj",
       "projectName": "Day 3",
-      "projectPath": "D:\\VS Code Projects\\Advent of Code 2023\\Day 3\\Day 3.csproj",
+      "projectPath": "D:\\VS Code Projects\\advent-of-code-2023\\Day 3\\Day 3.csproj",
       "packagesPath": "C:\\Users\\Bojer\\.nuget\\packages\\",
-      "outputPath": "D:\\VS Code Projects\\Advent of Code 2023\\Day 3\\obj\\",
+      "outputPath": "D:\\VS Code Projects\\advent-of-code-2023\\Day 3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Bojer\\AppData\\Roaming\\NuGet\\NuGet.Config"

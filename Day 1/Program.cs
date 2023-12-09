@@ -1,21 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-
-namespace Day_1;
+﻿namespace Day_1;
 
 public class Program
 {
     private static void Main(string[] args)
     {
-        string[] lines = File.ReadAllLines("D:/VS Code Projects/Advent of Code 2023/Day 1/input.txt");
-        int answerOne = PartOne(lines);
-        int answerTwo = PartTwo(lines);
-        Console.WriteLine("Answer One : " + answerOne + "\nAnswer Two : " + answerTwo);
+        string[] lines = File.ReadAllLines("D:/VS Code Projects/advent-of-code-2023/Day 1/input.txt");
+        PartOne(lines);
+        PartTwo(lines);
     }
 
-    private static int PartOne(string[] lines)
+    private static void PartOne(string[] lines)
     {
         int sum = 0;
 
@@ -29,10 +23,10 @@ public class Program
             sum += finalNum;
         }
 
-        return sum;
+        Console.WriteLine("Answer One : " + sum);
     }
 
-    private static int PartTwo(string[] lines)
+    private static void PartTwo(string[] lines)
     {
         Dictionary<string, int> digits = new()
         {
@@ -102,6 +96,6 @@ public class Program
             sum += finalNum;
         }
 
-        return sum;
+        Console.WriteLine("Answer One : " + sum);
     }
 }

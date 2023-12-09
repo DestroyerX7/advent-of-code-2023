@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OIGUNGF0UKtr1/WFvXWpM5ZcKm2kQfcnn7tANtu2WQL67IzzRP6U/CiZy6b95MJjgjweeu6WBkPCzQFqqN4U4g==",
+  "dgSpecHash": "pFqFo81hthk0jC17YkLtXjK/Mrhtq6dx0P0E0g3TMM/8QeAZZtLw62WIJDlwrgthZebKfhDO9v9hg+S0ppIfzg==",
   "success": true,
-  "projectFilePath": "D:\\VS Code Projects\\Advent of Code 2023\\Day 1\\Day 1.csproj",
+  "projectFilePath": "D:\\VS Code Projects\\advent-of-code-2023\\Day 1\\Day 1.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
