@@ -1,0 +1,14 @@
+D:\VS Code Projects\advent-of-code-2023\Day 15\bin\Debug\net7.0\Day 15.exe
+D:\VS Code Projects\advent-of-code-2023\Day 15\bin\Debug\net7.0\Day 15.deps.json
+D:\VS Code Projects\advent-of-code-2023\Day 15\bin\Debug\net7.0\Day 15.runtimeconfig.json
+D:\VS Code Projects\advent-of-code-2023\Day 15\bin\Debug\net7.0\Day 15.dll
+D:\VS Code Projects\advent-of-code-2023\Day 15\bin\Debug\net7.0\Day 15.pdb
+D:\VS Code Projects\advent-of-code-2023\Day 15\obj\Debug\net7.0\Day 15.GeneratedMSBuildEditorConfig.editorconfig
+D:\VS Code Projects\advent-of-code-2023\Day 15\obj\Debug\net7.0\Day 15.AssemblyInfoInputs.cache
+D:\VS Code Projects\advent-of-code-2023\Day 15\obj\Debug\net7.0\Day 15.AssemblyInfo.cs
+D:\VS Code Projects\advent-of-code-2023\Day 15\obj\Debug\net7.0\Day 15.csproj.CoreCompileInputs.cache
+D:\VS Code Projects\advent-of-code-2023\Day 15\obj\Debug\net7.0\Day 15.dll
+D:\VS Code Projects\advent-of-code-2023\Day 15\obj\Debug\net7.0\refint\Day 15.dll
+D:\VS Code Projects\advent-of-code-2023\Day 15\obj\Debug\net7.0\Day 15.pdb
+D:\VS Code Projects\advent-of-code-2023\Day 15\obj\Debug\net7.0\Day 15.genruntimeconfig.cache
+D:\VS Code Projects\advent-of-code-2023\Day 15\obj\Debug\net7.0\ref\Day 15.dll
