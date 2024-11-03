@@ -1,10 +1,12 @@
+using System.Text.RegularExpressions;
+
 namespace Day_12;
 
 public class ConditionRecord
 {
     private string _springConditions;
 
-    List<int> _groups = new();
+    private readonly List<int> _groups = new();
 
     public ConditionRecord(string conditionRecord)
     {
@@ -13,42 +15,49 @@ public class ConditionRecord
         _groups = split[1].Split(',').Select(int.Parse).ToList();
     }
 
-    // Doesnt work as a concept
     public int GetNumPossabilities()
     {
+        return GetNumPossabilities(0, 0, _springConditions);
+    }
+
+    private int GetNumPossabilities(int startIndex, int numIndex, string springConditions)
+    {
         int numPossabilities = 0;
+        int currentIndex = startIndex;
+        int numInARow = _groups[numIndex];
+        string currentSpringConditions = springConditions;
 
-        int firstQuestionMarkIndex = _springConditions.IndexOf("?");
-        int lastQuestionMarkIndex = _springConditions.LastIndexOf("?");
-
-        for (int i = firstQuestionMarkIndex; i <= lastQuestionMarkIndex; i++)
+        while (currentIndex + numInARow - 1 < _springConditions.Length)
         {
-            if (_springConditions[i] != '?')
+            bool isSpace = _springConditions[currentIndex..(currentIndex + numInARow)].All(c => c == '?' || c == '#');
+
+            // Idk but I think this makes it faster
+            if (isSpace && currentIndex + numInARow < _springConditions.Length && _springConditions[currentIndex + numInARow] == '#')
             {
+                currentIndex++;
                 continue;
             }
 
-            string replacedFirstQuestionMark = _springConditions[..i] + "#" + _springConditions[(i + 1)..];
-
-            for (int j = i + 1; j <= lastQuestionMarkIndex; j++)
+            if (numIndex == _groups.Count - 1 && isSpace)
             {
-                if (j == i)
-                {
-                    continue;
-                }
-
-                string currentString = replacedFirstQuestionMark;
-
-                for (var k = j; k <= lastQuestionMarkIndex; k++)
-                {
-                    if (currentString[k] == '?')
-                    {
-                        currentString = currentString[..k] + "#" + currentString[(k + 1)..];
-                    }
-
-                    numPossabilities += GetGroupNums(currentString).SequenceEqual(_groups) ? 1 : 0;
-                }
+                string connected = new('#', numInARow);
+                string newSpringConditions = currentSpringConditions[..currentIndex] + connected + currentSpringConditions[(currentIndex + numInARow)..];
+                numPossabilities += GetGroupNums(newSpringConditions).SequenceEqual(_groups) ? 1 : 0;
             }
+            else if (isSpace)
+            {
+                string connected = new('#', numInARow);
+                string newSpringConditions = currentSpringConditions[..currentIndex] + connected + currentSpringConditions[(currentIndex + numInARow)..];
+                numPossabilities += GetNumPossabilities(currentIndex + numInARow + 1, numIndex + 1, newSpringConditions);
+            }
+
+            // Idk but I think this makes it faster
+            if (_springConditions[currentIndex] == '#')
+            {
+                break;
+            }
+
+            currentIndex++;
         }
 
         return numPossabilities;
@@ -72,6 +81,28 @@ public class ConditionRecord
             }
         }
 
+        if (numConnected != 0)
+        {
+            groups.Add(numConnected);
+            numConnected = 0;
+        }
+
         return groups;
+    }
+
+    public void Unfold()
+    {
+        string originalSpringConditions = _springConditions;
+        List<int> originalGroups = new(_groups);
+
+        for (int i = 0; i < 4; i++)
+        {
+            _springConditions += "?" + originalSpringConditions;
+
+            foreach (int group in originalGroups)
+            {
+                _groups.Add(group);
+            }
+        }
     }
 }

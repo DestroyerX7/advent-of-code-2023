@@ -112,4 +112,16 @@ public class Program
 
         Console.WriteLine("Part Two : " + lcm);
     }
+
+    public static T GreatestCommonDivisor<T>(T a, T b) where T : System.Numerics.INumber<T>
+    {
+        while (b != T.Zero)
+        {
+            var temp = b;
+            b = a % b;
+            a = temp;
+        }
+
+        return a;
+    }
 }

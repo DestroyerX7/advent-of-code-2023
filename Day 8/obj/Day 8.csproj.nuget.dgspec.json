@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\VS Code Projects\\advent-of-code-2023\\Day 8\\Day 8.csproj": {}
+    "d:\\VS Code Projects\\advent-of-code-2023\\Day 8\\Day 8.csproj": {}
   },
   "projects": {
-    "D:\\VS Code Projects\\advent-of-code-2023\\Day 8\\Day 8.csproj": {
+    "d:\\VS Code Projects\\advent-of-code-2023\\Day 8\\Day 8.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\VS Code Projects\\advent-of-code-2023\\Day 8\\Day 8.csproj",
+        "projectUniqueName": "d:\\VS Code Projects\\advent-of-code-2023\\Day 8\\Day 8.csproj",
         "projectName": "Day 8",
-        "projectPath": "D:\\VS Code Projects\\advent-of-code-2023\\Day 8\\Day 8.csproj",
+        "projectPath": "d:\\VS Code Projects\\advent-of-code-2023\\Day 8\\Day 8.csproj",
         "packagesPath": "C:\\Users\\Bojer\\.nuget\\packages\\",
-        "outputPath": "D:\\VS Code Projects\\advent-of-code-2023\\Day 8\\obj\\",
+        "outputPath": "d:\\VS Code Projects\\advent-of-code-2023\\Day 8\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bojer\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     }

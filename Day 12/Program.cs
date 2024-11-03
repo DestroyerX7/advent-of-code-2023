@@ -6,6 +6,7 @@ public class Program
     {
         string[] lines = File.ReadAllLines("D:/VS Code Projects/advent-of-code-2023/Day 12/input.txt");
         PartOne(lines);
+        PartTwo(lines);
     }
 
     private static void PartOne(string[] lines)
@@ -23,6 +24,15 @@ public class Program
 
     private static void PartTwo(string[] lines)
     {
-        Console.WriteLine("Part Two : ");
+        long sum = 0;
+
+        foreach (string line in lines)
+        {
+            ConditionRecord conditionRecord = new(line);
+            conditionRecord.Unfold();
+            sum += conditionRecord.GetNumPossabilities();
+        }
+
+        Console.WriteLine("Part Two : " + sum);
     }
 }
